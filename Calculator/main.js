@@ -89,7 +89,7 @@ function getValue() {
         console.log('symbol = ' + symbol);
 
         return setValue;
-    } else if(display.innerText.length < 15) {
+    } else if(display.innerText.length < 10) {
         setValue += this.innerText;
         display.innerText = setValue;
 
