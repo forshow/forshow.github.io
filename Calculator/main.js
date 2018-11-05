@@ -89,7 +89,7 @@ function getValue() {
         console.log('symbol = ' + symbol);
 
         return setValue;
-    } else if(display.innerText.length < 12) {
+    } else if(display.innerText.length < 15) {
         setValue += this.innerText;
         display.innerText = setValue;
 
@@ -105,7 +105,7 @@ function getValue() {
 
 
 function manipulate() {
-    if (setValue != '' && display.innerText.length < 13){
+    if (setValue != '' && display.innerText.length < 11){
         if(memory != '') {
             if(this.innerText == '+' || this.innerText == '-') {
                 if(calcValue != '') {
@@ -161,7 +161,7 @@ function manipulate() {
 
 function calculate() {
     if (symbol != '') {
-        if (display.innerText.length >12) {
+        if (display.innerText.length >11) {
             display.innerText = 'ERROR';
             return display.innerText
         } else if (display.innerText == 'ERROR') {
