@@ -74,6 +74,8 @@ body {
         body #calc #display #input {
           box-sizing: border-box; }
       body #calc #buttons {
+        border: 1px solid green;
+        height: 75%;
                 /*
 
 
@@ -105,5 +107,4 @@ body {
                 }
                 */ }
         body #calc #buttons .btn {
-          width: 100px;
-          height: 100px; } }
+          width: 22%; } }
