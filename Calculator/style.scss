@@ -92,10 +92,11 @@ body {
             border-radius: 0px;
 
             #display {
+                font-family: Tahoma;
                 border-radius: 10vw;
                 margin-top: 2vh;
-                margin-bottom: 5vh;
-                padding: 3vh 1vw;
+                margin-bottom: 3vh;
+                padding: 2vh 1vw;
 
                 #input {
                     box-sizing: border-box;
@@ -103,10 +104,11 @@ body {
             }
 
             #buttons {
-                border: 1px solid green;
-                height: 75%;
+                height: 70vh;
+
                 .btn {
-                    width: 22%;
+                    width: 20vw;
+                    height: 20vw;
                 }
                 /*
 
