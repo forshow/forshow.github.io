@@ -103,7 +103,6 @@ body {
         }
 
         #select {
-            height: 60vh;
             z-index: 2;
             background: rgba(255, 255, 255, 0.2);
 
@@ -116,11 +115,9 @@ body {
                     height: 95%;
                     margin: auto;
                     color: #fff;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     overflow: hidden;
                     border: 1px solid #fff;
-
-
 
 
                     .sel-info {
@@ -146,7 +143,6 @@ body {
                         p {
                             letter-spacing: 2px;
                         }
-
                     }
 
                     .sel-bg {
@@ -168,9 +164,6 @@ body {
     }
 
 
-
-
-
     footer {
         bottom: 0;
         z-index: 2;
@@ -178,3 +171,71 @@ body {
         color: #fff;
     }
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    body {
+        main {
+
+            #top {
+
+                &.upMe {
+                    height: 40vh;
+                }
+
+                #logo {
+                    border: 2px solid #fff;
+                    border-radius: 8px;
+                    font-size: 8vw;
+                }
+
+                h5 {
+                    bottom: 20px;
+                }
+            }
+
+            #select {
+
+                .select {
+                    flex-direction: column;
+                    padding: 20px 0;
+
+                    a {
+                        margin: 5px 0;
+                        padding: 5px 0;
+
+                        .sel-info {
+
+                            h2 {
+
+                                letter-spacing: 10px;
+                                font-size: 7vw;
+                            }
+                        }
+
+                        .sel-bg {
+
+                            img {
+                                min-width: 100%;
+                                min-height: 100%;
+                                margin-top: -180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
