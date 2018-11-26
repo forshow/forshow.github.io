@@ -1,46 +1,180 @@
-body {
-    font-family: Helvetica, arial, sans-serif;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+$bright-color: rgb(255, 252, 0);
+$dark-color: rgb(80, 80, 80);
 
-    .screen {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        z-index: 0;
+.BRIGHT {
+    border: 1px solid $bright-color;
+}
+.RED {
+    border: 1px solid red;
+}
+.GREEN {
+    border: 1px solid green;
+}
+.BLUE {
+    border: 1px solid blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Ubuntu', 'Helvetica',  sans-serif;
+    font-size: 16px;
+    color: $dark-color;
+
+    .text-maincolor {
+        color: $bright-color;
     }
 
-    h1 {
-        position: relative;
-        color: #fff;
-        margin: auto;
-        text-align: center;
-        font-size: 100px;
+    #bg-img {
+        height: 100vh;
+        top: 0;
+        left: 0;
+        overflow: hidden;
 
-        span {
-            color: rgb(196, 180, 29);
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba($dark-color, 0.9);
+            z-index: 1;
+        }
+
+        img {
+            position: inherit;
+            min-width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
         }
     }
 
-    p {
-        border: 5px solid rgb(196, 180, 29);
-        border-radius: 15px;
-        padding: 20px;
-        position: absolute;
-        text-align: center;
+    main {
+        height: 100vh;
+        overflow: hidden;
+
+        #top {
+            height: 100vh;
+            z-index: 2;
+            transition: 1s all ease-out;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.upMe {
+                height: 40vh;
+            }
+
+            #logo {
+                border: 3px solid #fff;
+                border-radius: 12px;
+                align-self: center;
+                font-size: 80px;
+                letter-spacing: 1vw;
+                line-height: 0;
+
+                h1 {
+                    box-sizing: border-box;
+                    font-size: 1em;
+                    letter-spacing: 0.05em;
+                    color: #fff;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 0.2em;
+                    letter-spacing: 1em;
+                    padding-bottom: 20px;
+                }
+            }
+
+            h5 {
+                left: 50%;
+                bottom: 30vh;
+                transform: translateX(-50%);
+            }
+        }
+
+        #select {
+            height: 60vh;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.2);
+
+            .select {
+                height: 56vh;
+
+
+                a {
+                    text-decoration: none;
+                    height: 95%;
+                    margin: auto;
+                    color: #fff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    border: 1px solid #fff;
+
+
+
+
+                    .sel-info {
+                        height: 100%;
+                        background: rgba($dark-color, 0.8);
+                        z-index: 3;
+                        opacity: 1;
+                        transition: 1s opacity ease-out;
+
+
+                        &:hover {
+                            opacity: 0;
+                            transition: 1s opacity ease-out;
+                        }
+
+                        h2 {
+                            font-weight: bold;
+                            letter-spacing: 7px;
+                            color: $bright-color;
+                            font-size: 5vw;
+                        }
+
+                        p {
+                            letter-spacing: 2px;
+                        }
+
+                    }
+
+                    .sel-bg {
+                        position: relative;
+                        top: 0;
+                        left: -100%;
+                        text-align: center;
+                        overflow: hidden;
+                        z-index: 2;
+
+                        img {
+                            min-width: 100%;
+                            min-height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    footer {
+        bottom: 0;
+        z-index: 2;
+        height: 4vh;
         color: #fff;
-        font-size: 80px;
-        font-weight: bold;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(56, 58, 59, 0.4);
-        box-sizing: border-box;
     }
 }
