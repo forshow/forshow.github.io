@@ -152,4 +152,5 @@ body {
         min-height: 100%;
         margin-top: -180px; }
   body footer {
-    background: rgba(80, 80, 80, 0.5); } }
+    background: rgba(80, 80, 80, 0.5);
+    font-size: 3vw; } }
