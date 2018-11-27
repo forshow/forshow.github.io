@@ -112,7 +112,7 @@ body {
             }
 
             h5 {
-                bottom: 2%;
+                bottom: 3vh;
                 font-size: 2.5vh;
             }
         }
@@ -157,6 +157,7 @@ body {
 
                         p {
                             letter-spacing: 2px;
+                            padding: 0 10%;
                         }
                     }
 
@@ -184,6 +185,9 @@ body {
         z-index: 2;
         height: 4vh;
         color: #fff;
+        letter-spacing: 2px;
+        font-weight: lighter;
+        z-index: 1;
     }
 }
 
@@ -193,7 +197,16 @@ body {
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
     body {
+
+
         main {
+            &.main-height {
+                overflow: scroll;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
 
             #top {
 
@@ -201,14 +214,10 @@ body {
                     height: 40vh;
                 }
 
-                #logo {
-                    border: 2px solid #fff;
-                    border-radius: 8px;
-                    font-size: 8vw;
-                }
-
-                h5 {
-                    bottom: 20px;
+                .top-container {
+                    #logo {
+                        font-size: 14vw;
+                    }
                 }
             }
 
@@ -216,16 +225,17 @@ body {
 
                 .select {
                     flex-direction: column;
-                    padding: 20px 0;
+                    padding: 2vh 0 4vh 0;
+                    height: 100%;
 
                     a {
                         margin: 5px 0;
                         padding: 5px 0;
+                        height: 25vh;
 
                         .sel-info {
 
                             h2 {
-
                                 letter-spacing: 10px;
                                 font-size: 7vw;
                             }
@@ -242,6 +252,10 @@ body {
                     }
                 }
             }
+        }
+
+        footer {
+            background: rgba($dark-color, 0.5);
         }
     }
 }
