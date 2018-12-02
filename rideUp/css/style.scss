@@ -134,7 +134,8 @@ body {
                     margin: 30px 0;
                     padding: 10px;
                     max-width: 100%;
-                    overflow: hidden;
+                    overflow-x: scroll;
+
 
                     h2 {
 
@@ -142,6 +143,7 @@ body {
 
                     .table {
                         margin: 30px 0;
+                        //overflow: scroll;
                     }
                 }
 
@@ -209,27 +211,30 @@ body {
                     max-width: 300px;
                     margin: auto;
 
-                    span {
-                        color: $bright-color;
-                    }
+                    .info {
 
-                    p {
-                        font-weight: lighter;
-                    }
+                        span {
+                            color: $bright-color;
+                        }
 
-                    h2 {
-                        font-size: 50px;
-                    }
+                        p {
+                            font-weight: lighter;
+                        }
 
-                    a {
-                        color: $bright-color;
-                        padding: 5px 7px;
-                        background: $dark-color;
-                        border-radius: 3px;
+                        h2 {
+                            font-size: 50px;
+                        }
 
-                        &:hover {
-                            text-decoration: none;
-                            color: #fff;
+                        a {
+                            color: $bright-color;
+                            padding: 5px 7px;
+                            background: $dark-color;
+                            border-radius: 3px;
+
+                            &:hover {
+                                text-decoration: none;
+                                color: #fff;
+                            }
                         }
                     }
                 }
@@ -379,6 +384,13 @@ body {
                             p {
                                 letter-spacing: 2px;
                                 padding: 0 10%;
+                            }
+
+                            svg {
+
+                                path {
+                                    fill: #fff;
+                                }
                             }
                         }
 
