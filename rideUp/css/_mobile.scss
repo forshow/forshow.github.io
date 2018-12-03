@@ -9,12 +9,14 @@
         }
 
         header {
+
             nav {
                 .menu-btn {
                     display: block;
                 }
 
                 #call {
+
                     &.show {
                         opacity: 1;
                         bottom: 75px;
@@ -130,9 +132,23 @@
                 padding: 0 10px;
 
                 #price {
+
                     .price-list {
-                        .table {
-                            overflow: scroll;
+
+                        table {
+
+                            thead {
+                                tr {
+
+                                    th {
+                                        min-width: 14vw;
+
+                                        &.naming {
+                                            min-width: 80vw;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
 
