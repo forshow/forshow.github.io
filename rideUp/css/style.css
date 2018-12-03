@@ -27,7 +27,9 @@ header nav #call {
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  transition: 1s all ease-out; }
+  transition: 1s all ease-out;
+  background: #fffc00;
+  border-radius: 50%; }
   header nav #call svg path {
     fill: #8499b2; }
 header nav .active {
@@ -210,41 +212,94 @@ body {
               opacity: 0.9; }
             body main #top .top-section .section-bg .hold-image.fishing-opacity-bg {
               opacity: 0.8; }
+    body main #about {
+      width: 100%;
+      padding: 70px;
+      margin: auto;
+      min-height: 100vh;
+      text-align: justify;
+      line-height: 2;
+      background: #fff; }
+      body main #about .bio-content {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        justify-content: space-between; }
+        body main #about .bio-content .bio-image {
+          display: flex;
+          flex-direction: column;
+          width: 45%;
+          justify-content: center;
+          height: auto; }
+          body main #about .bio-content .bio-image img {
+            width: 100%;
+            object-fit: cover;
+            margin: auto; }
+        body main #about .bio-content .bio {
+          display: flex;
+          flex-direction: column;
+          width: 45%;
+          align-items: center;
+          height: auto; }
+          body main #about .bio-content .bio h1 {
+            text-align: right;
+            width: 100%;
+            padding-bottom: 50px;
+            font-weight: lighter;
+            font-size: 70px; }
+      body main #about .about-botom {
+        background: rgba(80, 80, 80, 0.7);
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: lighter; }
+        body main #about .about-botom span {
+          font-weight: bold;
+          font-size: 20px;
+          color: #fffc00; }
+    body main #price {
+      width: 100%;
+      padding: 70px;
+      margin: auto;
+      min-height: 100vh; }
+      body main #price h1 {
+        text-align: right;
+        width: 100%;
+        padding-bottom: 50px;
+        font-weight: lighter;
+        font-size: 70px; }
+      body main #price .price-list {
+        border-left: 2px solid #fffc00;
+        margin: 30px 0;
+        padding: 10px;
+        max-width: 100%;
+        overflow-x: scroll; }
+        body main #price .price-list table {
+          margin: 30px 0; }
+          body main #price .price-list table thead {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            background: rgba(80, 80, 80, 0.7); }
+            body main #price .price-list table thead th {
+              text-align: center; }
+              body main #price .price-list table thead th.naming {
+                text-align: left; }
+          body main #price .price-list table tbody tr td {
+            text-align: center; }
     body main .wraper {
       width: calc(100% - 140px);
       margin: auto; }
-      body main .wraper #price {
-        min-height: 100vh;
-        width: 100%; }
-        body main .wraper #price .price-list {
-          border-left: 2px solid #fffc00;
-          margin: 30px 0;
-          padding: 10px;
-          max-width: 100%;
-          overflow-x: scroll; }
-          body main .wraper #price .price-list table {
-            margin: 30px 0; }
-            body main .wraper #price .price-list table thead {
-              color: #fff;
-              font-size: 20px;
-              font-weight: bold;
-              background: rgba(80, 80, 80, 0.7); }
-              body main .wraper #price .price-list table thead th {
-                text-align: center; }
-                body main .wraper #price .price-list table thead th.naming {
-                  text-align: left; }
-            body main .wraper #price .price-list table tbody tr td {
-              text-align: center; }
-        body main .wraper #price .more-info {
-          text-align: justify; }
-          body main .wraper #price .more-info .waranty {
-            font-weight: bold;
-            background: rgba(80, 80, 80, 0.7);
-            color: #fff;
-            text-align: center;
-            border-radius: 3px;
-            margin: 50px 0;
-            padding: 20px; }
+      body main .wraper .more-info {
+        text-align: justify; }
+        body main .wraper .more-info .waranty {
+          font-weight: bold;
+          background: rgba(80, 80, 80, 0.7);
+          color: #fff;
+          text-align: center;
+          border-radius: 3px;
+          margin: 50px 0;
+          padding: 20px; }
       body main .wraper #impo-info {
         min-height: 100vh;
         display: flex;
@@ -505,16 +560,29 @@ body {
         max-width: 100%; }
   body main #top {
     padding: 70px 0; }
+  body main #about .bio-content .bio-image {
+    display: none; }
+  body main #about .bio-content .bio {
+    width: 100%; }
+    body main #about .bio-content .bio h1 {
+      padding-bottom: 20px;
+      font-size: 50px; }
+  body main #price {
+    width: 100%;
+    padding: 70px 10px; }
+    body main #price h1 {
+      padding-bottom: 20px;
+      font-size: 50px; }
+    body main #price .price-list table thead tr th {
+      min-width: 14vw; }
+      body main #price .price-list table thead tr th.naming {
+        min-width: 80vw; }
   body main .wraper {
     width: 100%;
     padding: 0 10px; }
-    body main .wraper #price .price-list table thead tr th {
-      min-width: 14vw; }
-      body main .wraper #price .price-list table thead tr th.naming {
-        min-width: 80vw; }
-    body main .wraper #price .more-info {
-      padding: 20px; }
-      body main .wraper #price .more-info .waranty {
+    body main .wraper .more-info {
+      padding: 0 20px; }
+      body main .wraper .more-info .waranty {
         margin: 50px 0;
         padding: 20px; }
     body main .wraper #impo-info .center .list {
