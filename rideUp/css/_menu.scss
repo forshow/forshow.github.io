@@ -2,6 +2,9 @@
 header {
 
     nav {
+        position: relative;
+        z-index: 10;
+        
         // Menu Button
         .menu-btn {
             display: none;
