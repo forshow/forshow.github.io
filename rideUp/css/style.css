@@ -229,6 +229,12 @@ body {
               font-size: 20px;
               font-weight: bold;
               background: rgba(80, 80, 80, 0.7); }
+              body main .wraper #price .price-list table thead th {
+                text-align: center; }
+                body main .wraper #price .price-list table thead th.naming {
+                  text-align: left; }
+            body main .wraper #price .price-list table tbody tr td {
+              text-align: center; }
         body main .wraper #price .more-info {
           text-align: justify; }
           body main .wraper #price .more-info .waranty {

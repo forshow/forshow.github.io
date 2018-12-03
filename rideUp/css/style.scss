@@ -149,6 +149,24 @@ body {
                             font-size: 20px;
                             font-weight: bold;
                             background: rgba($dark-color, 0.7);
+
+                            th {
+                                text-align: center;
+
+                                &.naming {
+                                    text-align: left;
+                                }
+                            }
+                        }
+
+                        tbody {
+
+                            tr {
+
+                                td {
+                                    text-align: center;
+                                }
+                            }
                         }
                     }
                 }
