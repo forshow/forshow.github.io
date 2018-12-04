@@ -12,6 +12,7 @@
         main {
             ///CSS for HEAD PAGE///
             &.head {
+
                 &.main-height {
                     overflow: scroll;
                     height: 100%;
@@ -49,12 +50,19 @@
                 }
             }
             ///END of CSS for HEAD PAGE///
+
             #top {
-                padding: 70px 0;
+                padding: 0 0 70px 0;
             }
 
             #about {
-                padding: 70px 30px;
+                padding: 10px;
+
+                h1 {
+                    padding-bottom: 20px;
+                    padding-right: 20px;
+                    font-size: 50px;
+                }
 
 
                 .bio-content {
@@ -79,10 +87,11 @@
 
             #price {
                 width: 100%;
-                padding: 70px 10px;
+                padding: 10px;
 
                 h1 {
                     padding-bottom: 20px;
+                    padding-right: 20px;
                     font-size: 50px;
                 }
 

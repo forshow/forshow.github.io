@@ -16,13 +16,27 @@ header nav {
       background: #505050;
       transition: 0.3s all ease-out; }
     header nav .menu-btn.close {
-      transform: rotate(180deg) translate(0, 0px); }
-      header nav .menu-btn.close .btn-line:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px); }
-      header nav .menu-btn.close .btn-line:nth-child(2) {
-        opacity: 0; }
-      header nav .menu-btn.close .btn-line:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px); }
+      display: none;
+                /*
+                transform: rotate(180deg) translate(0, 0px);
+
+                .btn-line {
+                    // Line 1 -Rotate
+                    &:nth-child(1) {
+                        transform: rotate(45deg) translate(5px, 5px);
+                    }
+
+                    // Line 2 - hidden
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    // Line 3 - Rotate
+                    &:nth-child(3) {
+                        transform: rotate(-45deg) translate(7px, -6px);
+                    }
+                }
+                */ }
   header nav #call {
     opacity: 0;
     position: fixed;
@@ -31,7 +45,7 @@ header nav {
     transform: translateX(-50%);
     z-index: 10;
     transition: 1s all ease-out;
-    background: #fffc00;
+    background: #f2f2f6;
     border-radius: 50%; }
     header nav #call svg path {
       fill: #8499b2; }
@@ -68,6 +82,8 @@ header nav {
 
 @media (max-width: 767.98px) {
   header nav .menu-btn {
+    background: #edf2fa;
+    border-radius: 3px;
     display: block;
     padding: 15px 10px 10px 10px; }
   header nav #call.show {
@@ -92,7 +108,7 @@ header nav {
     transition: 0.5s transform ease-out; }
     header nav .left-nav .pusher {
       display: block;
-      width: 25vw; }
+      width: 40vw; }
     header nav .left-nav.show {
       transform: translate3d(0, 0, 0);
       transition: 0.5s transform ease-out; }
@@ -487,9 +503,13 @@ body {
       body main.head #select .select a .sel-bg img {
         max-width: 100%; }
   body main #top {
-    padding: 70px 0; }
+    padding: 0 0 70px 0; }
   body main #about {
-    padding: 70px 30px; }
+    padding: 10px; }
+    body main #about h1 {
+      padding-bottom: 20px;
+      padding-right: 20px;
+      font-size: 50px; }
     body main #about .bio-content {
       display: block;
       padding: 0 30px; }
@@ -503,9 +523,10 @@ body {
       right: 15px; }
   body main #price {
     width: 100%;
-    padding: 70px 10px; }
+    padding: 10px; }
     body main #price h1 {
       padding-bottom: 20px;
+      padding-right: 20px;
       font-size: 50px; }
     body main #price .price-list table thead tr th {
       min-width: 14vw; }

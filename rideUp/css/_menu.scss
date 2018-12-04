@@ -26,6 +26,8 @@ header {
             // Rotate Into X With Menu Lines
 
             &.close {
+                display: none;
+                /*
                 transform: rotate(180deg) translate(0, 0px);
 
                 .btn-line {
@@ -44,6 +46,7 @@ header {
                         transform: rotate(-45deg) translate(7px, -6px);
                     }
                 }
+                */
             }
         }
 
@@ -55,7 +58,7 @@ header {
             transform: translateX(-50%);
             z-index: 10;
             transition: 1s all ease-out;
-            background: $bright-color;
+            background: rgb(242, 242, 246);
             border-radius: 50%;
 
             svg {
@@ -119,6 +122,8 @@ header {
 
         nav {
             .menu-btn {
+                background: rgb(237, 242, 250);
+                border-radius: 3px;
                 display: block;
                 padding: 15px 10px 10px 10px;
             }
@@ -154,7 +159,7 @@ header {
 
                 .pusher {
                     display: block;
-                    width: 25vw;
+                    width: 40vw;
                 }
 
                 a {
