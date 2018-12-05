@@ -7,7 +7,7 @@ $(document).ready(function() {
     let aIcon = $('#about-icon');
     let pIcon = $('#price-icon');
     let cIcon = $('#contact-icon');
-    let prevWindowTop = 0;
+    let prevWindowTop = 70;
 
     function ready() {
         element.click(upMe)
@@ -56,16 +56,14 @@ $(document).ready(function() {
 
         // adding class show to left-menu, which will appear in mobile version on bottom if user scroll up
 
-        if(windowTop > prevWindowTop) {
+        if(windowTop > prevWindowTop && windowTop > 70) {
             leftNav.removeClass('show');
-            call.removeClass('show')
-            prevWindowTop = windowTop;
-            return prevWindowTop
-        } else {
+            call.removeClass('show');
+            prevWindowTop = windowTop
+        } else if (windowTop < prevWindowTop && windowTop > 70 && windowTop + screen < docHeight - 70){
             leftNav.addClass('show');
             call.addClass('show');
-            prevWindowTop = windowTop;
-            return prevWindowTop
+            prevWindowTop = windowTop
         }
     });
 });

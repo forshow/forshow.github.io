@@ -117,7 +117,7 @@ header nav {
     transition: 0.5s transform ease-out; }
     header nav .left-nav .pusher {
       display: block;
-      width: 100px; }
+      width: 150px; }
     header nav .left-nav.show {
       transform: translate3d(0, 0, 0);
       transition: 0.5s transform ease-out; }
