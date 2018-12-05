@@ -60,7 +60,7 @@ $(document).ready(function() {
             leftNav.removeClass('show');
             call.removeClass('show');
             prevWindowTop = windowTop
-        } else if (windowTop < prevWindowTop && windowTop > 70 && windowTop + screen < docHeight - 70){
+        } else if (windowTop < prevWindowTop && windowTop > 70 && windowTop + screen < docHeight - 270){
             leftNav.addClass('show');
             call.addClass('show');
             prevWindowTop = windowTop

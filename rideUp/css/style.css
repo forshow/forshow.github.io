@@ -111,8 +111,6 @@ header nav {
     width: 100vw;
     height: 70px;
     padding-top: 0;
-    padding-left: 60px;
-    padding-right: 60px;
     transform: translate3d(100vw, 0, 0);
     transition: 0.5s transform ease-out; }
     header nav .left-nav .pusher {
