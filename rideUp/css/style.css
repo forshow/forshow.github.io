@@ -47,17 +47,7 @@ header nav {
         }
         */ }
   header nav #call {
-    opacity: 0;
-    position: fixed;
-    bottom: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    transition: 1s all ease-out;
-    background: #f2f2f6;
-    border-radius: 50%; }
-    header nav #call svg path {
-      fill: #8499b2; }
+    display: none; }
   header nav .active {
     background: rgba(80, 80, 80, 0.1); }
   header nav .pusher {
@@ -95,10 +85,23 @@ header nav {
     border-radius: 3px;
     display: block;
     padding: 15px 10px 10px 10px; }
-  header nav #call.show {
-    opacity: 1;
-    bottom: 35px;
-    transition: 1s all ease-out; }
+  header nav #call {
+    display: block;
+    opacity: 0;
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    background: #f2f2f6;
+    border-radius: 50%;
+    transition: 1.1s all ease-out; }
+    header nav #call svg path {
+      fill: #8499b2; }
+    header nav #call.show {
+      opacity: 1;
+      bottom: 35px;
+      transition: 1s bottom ease-out; }
   header nav .left-nav {
     background: linear-gradient(90.75deg, #faf4f0 0, #ebf1fc 100%);
     z-index: 5;
@@ -111,7 +114,7 @@ header nav {
     width: 100vw;
     height: 70px;
     padding-top: 0;
-    transform: translate3d(100vw, 0, 0);
+    transform: translate3d(0, 70px, 0);
     transition: 0.5s transform ease-out; }
     header nav .left-nav .pusher {
       display: block;
@@ -404,7 +407,7 @@ body {
         margin: 30px 0;
         padding: 10px;
         max-width: 100%;
-        overflow-x: scroll; }
+        overflow: scroll; }
         body main #price .price-list table thead {
           color: #fff;
           font-size: 20px;
