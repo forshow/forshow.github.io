@@ -23,9 +23,26 @@
                 }
 
                 #top {
+
                     .top-container {
                         #logo {
                             font-size: 10vw;
+                        }
+                    }
+
+                    &.upMe {
+                        height: 20vh;
+                        padding: 0;
+
+                        .icons {
+                            opacity: 0;
+                            transition: 1s opacity ease-out;
+                        }
+
+                        h5 {
+                            bottom: 0;
+                            font-size: 1.5vh;
+                            transition: 1s all ease-out;
                         }
                     }
                 }
@@ -37,7 +54,7 @@
                         height: 100%;
 
                         a {
-                            height: 25vh;
+                            height: 22vh;
                             margin: 5px 0;
 
                             .sel-bg {
@@ -79,9 +96,10 @@
                 }
 
                 .about-botom {
-                    bottom: 15px;
-                    left: 15px;
-                    right: 15px;
+                    position: relative;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
                 }
             }
 

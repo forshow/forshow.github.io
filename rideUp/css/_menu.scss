@@ -5,6 +5,7 @@ header {
         position: relative;
         z-index: 10;
 
+        /*
         // Menu Button
         .menu-btn {
             display: none;
@@ -46,9 +47,9 @@ header {
                         transform: rotate(-45deg) translate(7px, -6px);
                     }
                 }
-                */
             }
         }
+        */
 
         #call {
             opacity: 0;
@@ -159,7 +160,7 @@ header {
 
                 .pusher {
                     display: block;
-                    width: 40vw;
+                    width: 100px;
                 }
 
                 a {

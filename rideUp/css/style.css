@@ -1,22 +1,29 @@
 header nav {
   position: relative;
-  z-index: 10; }
-  header nav .menu-btn {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    right: 20px;
-    bottom: 10px;
-    cursor: pointer;
-    transition: 0.3s all ease-out; }
-    header nav .menu-btn .btn-line {
-      width: 35px;
-      height: 3px;
-      margin: 0 0 5px 0;
-      background: #505050;
-      transition: 0.3s all ease-out; }
-    header nav .menu-btn.close {
-      display: none;
+  z-index: 10;
+        /*
+        // Menu Button
+        .menu-btn {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            right: 20px;
+            bottom: 10px;
+            cursor: pointer;
+            transition: 0.3s all ease-out;
+
+            .btn-line {
+                width: 35px;
+                height: 3px;
+                margin: 0 0 5px 0;
+                background: $dark-color;
+                transition: 0.3s all ease-out;
+            }
+
+            // Rotate Into X With Menu Lines
+
+            &.close {
+                display: none;
                 /*
                 transform: rotate(180deg) translate(0, 0px);
 
@@ -36,7 +43,9 @@ header nav {
                         transform: rotate(-45deg) translate(7px, -6px);
                     }
                 }
-                */ }
+            }
+        }
+        */ }
   header nav #call {
     opacity: 0;
     position: fixed;
@@ -108,7 +117,7 @@ header nav {
     transition: 0.5s transform ease-out; }
     header nav .left-nav .pusher {
       display: block;
-      width: 40vw; }
+      width: 100px; }
     header nav .left-nav.show {
       transform: translate3d(0, 0, 0);
       transition: 0.5s transform ease-out; }
@@ -391,7 +400,9 @@ body {
             letter-spacing: 1em;
             line-height: 1; }
         body main.head #top .top-container .icons {
-          margin-top: 1vh; }
+          margin-top: 1vh;
+          opacity: 1;
+          transition: 1s opacity ease-out; }
           body main.head #top .top-container .icons a {
             color: #fff;
             margin: 0 1vw;
@@ -401,7 +412,8 @@ body {
               transition: 0.5s color ease-out; }
         body main.head #top h5 {
           bottom: 3vh;
-          font-size: 2.5vh; }
+          font-size: 2.5vh;
+          transition: 1s all ease-out; }
       body main.head #select {
         z-index: 2; }
         body main.head #select .select {
@@ -415,9 +427,12 @@ body {
             position: relative;
             color: #fff;
             border-radius: 3px;
-            border: 1px solid #fff; }
+            border: 1px solid #fff;
+            box-sizing: border-box; }
             body main.head #select .select a .sel-info {
               position: absolute;
+              top: 0;
+              left: 0;
               height: 100%;
               background: rgba(80, 80, 80, 0.7);
               z-index: 3;
@@ -493,12 +508,22 @@ body {
       display: none; }
   body main.head #top .top-container #logo {
     font-size: 10vw; }
+  body main.head #top.upMe {
+    height: 20vh;
+    padding: 0; }
+    body main.head #top.upMe .icons {
+      opacity: 0;
+      transition: 1s opacity ease-out; }
+    body main.head #top.upMe h5 {
+      bottom: 0;
+      font-size: 1.5vh;
+      transition: 1s all ease-out; }
   body main.head #select .select {
     flex-direction: column;
     padding: 2vh 0 4vh;
     height: 100%; }
     body main.head #select .select a {
-      height: 25vh;
+      height: 22vh;
       margin: 5px 0; }
       body main.head #select .select a .sel-bg img {
         max-width: 100%; }
@@ -518,9 +543,10 @@ body {
       body main #about .bio-content .bio {
         width: 100%; }
     body main #about .about-botom {
-      bottom: 15px;
-      left: 15px;
-      right: 15px; }
+      position: relative;
+      bottom: 0;
+      left: 0;
+      right: 0; }
   body main #price {
     width: 100%;
     padding: 10px; }

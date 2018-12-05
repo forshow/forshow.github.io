@@ -7,12 +7,10 @@ $(document).ready(function() {
     let aIcon = $('#about-icon');
     let pIcon = $('#price-icon');
     let cIcon = $('#contact-icon');
+    let prevWindowTop = 0;
 
     function ready() {
         element.click(upMe)
-        menuBtn.click(show)
-
-        //setTimeout(steady, 5000)
     }
 
     ready();
@@ -27,18 +25,6 @@ $(document).ready(function() {
         }
     };
 
-    function show() {
-        if(menuBtn.hasClass('close')) {
-            menuBtn.removeClass('close');
-            leftNav.removeClass('show');
-            call.removeClass('show')
-        } else {
-            menuBtn.addClass('close');
-            leftNav.addClass('show');
-            call.addClass('show')
-        }
-    }
-
     $(function() {
 
     //caches a jQuery object containing the class .clos (for hiding navigation on scrollin the window)
@@ -50,11 +36,7 @@ $(document).ready(function() {
         let priceDiv = screen * 2 - 10;
         let contactDiv = docHeight - screen - 10;
 
-        if(menuBtn.hasClass('close')) {
-            show();
-        };
-
-        //adding class .active to icons if top of window riches the category place
+        // adding class .active to icons if top of window riches the category place
 
         if(windowTop < aboutDiv) {
             aIcon.removeClass('active');
@@ -70,6 +52,20 @@ $(document).ready(function() {
         } else if (windowTop > contactDiv && !cIcon.hasClass('active')) {
             pIcon.removeClass('active');
             cIcon.addClass('active')
+        }
+
+        // adding class show to left-menu, which will appear in mobile version on bottom if user scroll up
+
+        if(windowTop > prevWindowTop) {
+            leftNav.removeClass('show');
+            call.removeClass('show')
+            prevWindowTop = windowTop;
+            return prevWindowTop
+        } else {
+            leftNav.addClass('show');
+            call.addClass('show');
+            prevWindowTop = windowTop;
+            return prevWindowTop
         }
     });
 });
