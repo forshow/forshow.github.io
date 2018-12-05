@@ -50,7 +50,6 @@
                 #select {
                     .select {
                         flex-direction: column;
-                        padding: 2vh 0 4vh;
                         height: 100%;
 
                         a {
@@ -114,10 +113,17 @@
                 }
 
                 .price-list {
-
+                    max-height: 90vh;
+                    position: relative;
+                    padding: 0;
                     table {
 
                         thead {
+                            position: -webkit-sticky;
+                            position: sticky;
+                            top: 0;
+                            background: rgba($dark-color, 0.9);
+
                             tr {
 
                                 th {

@@ -30,6 +30,7 @@ $(document).ready(function() {
     //caches a jQuery object containing the class .clos (for hiding navigation on scrollin the window)
     $(window).scroll(function() {
         let windowTop = $(window).scrollTop();
+        let windowWidth = $(window).width();
         let docHeight = $(document).height();
         let screen = $(window).innerHeight();
         let aboutDiv = screen - 10;
@@ -56,7 +57,7 @@ $(document).ready(function() {
 
         // adding class show to left-menu, which will appear in mobile version on bottom if user scroll up
 
-        if(windowTop > prevWindowTop && windowTop > 70) {
+        if(windowTop > prevWindowTop && windowTop > 70 && windowWidth < 768) {
             leftNav.removeClass('show');
             call.removeClass('show');
             prevWindowTop = windowTop
