@@ -151,6 +151,14 @@ body {
   background: green;
   height: 100%;
   min-height: 100vh; }
+  body .smooth-scroll-center, body .smooth-scroll-center-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: 0;
+    z-index: -1; }
   body svg path {
     fill: #8499b2; }
   body main {
@@ -395,7 +403,8 @@ body {
       width: 100%;
       padding: 70px;
       margin: auto;
-      min-height: 100vh; }
+      min-height: 100vh;
+      position: relative; }
       body main #price h1 {
         text-align: right;
         width: 100%;
@@ -450,7 +459,8 @@ body {
               margin: 30px auto; }
     body main #contact {
       min-height: calc(100vh - 4vh);
-      background: #fff; }
+      background: #fff;
+      position: relative; }
       body main #contact .wraper {
         width: 100%;
         padding: 70px;
@@ -558,6 +568,9 @@ body {
       padding: 0; }
       body main #price .price-list table thead {
         position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
         position: sticky;
         top: 0;
         background: rgba(80, 80, 80, 0.9); }

@@ -120,6 +120,9 @@
 
                         thead {
                             position: -webkit-sticky;
+                            position: -moz-sticky;
+                            position: -ms-sticky;
+                            position: -o-sticky;
                             position: sticky;
                             top: 0;
                             background: rgba($dark-color, 0.9);
