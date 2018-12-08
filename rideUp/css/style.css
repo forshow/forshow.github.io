@@ -567,8 +567,9 @@ body {
   body footer {
     height: 4vh;
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: lighter;
+    font-size: 13px;
     background: rgba(80, 80, 80, 0.5); }
     body footer.head {
       position: fixed;
@@ -651,7 +652,7 @@ body {
             min-width: 80vw; }
   body main #categories {
     padding: 10px; }
-    body main #categories .section h1 {
+    body main #categories h1 {
       text-align: right;
       font-size: 6vw; }
   body main .wraper {
