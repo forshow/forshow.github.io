@@ -580,6 +580,8 @@ body {
 @media (max-width: 767.98px) {
   body::-webkit-scrollbar {
     display: none; }
+  body .bla-bla {
+    display: none; }
   body main.head.main-height {
     overflow: scroll;
     height: 100%; }
