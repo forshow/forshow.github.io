@@ -444,10 +444,15 @@ body {
             }
         }
 
-        //START ofconfig for skicat page//
+        //START of config for skicat page//
 
         #categories {
             padding: 70px 70px;
+            margin-bottom: 50px;
+
+            hr {
+                margin: 50px 0;
+            }
 
             h1 {
                 font-weight: normal;
@@ -495,7 +500,7 @@ body {
             }
         }
 
-        //START ofconfig for skicat page//
+        //END of config for skicat page//
 
         .wraper {
             width: calc(100% - 140px);
