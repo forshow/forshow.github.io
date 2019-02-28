@@ -45,91 +45,132 @@
 
 <body>
     <header class="header">
-        <div class="headerarea">
-
-        </div>
         <div class="container">
-            <nav class="navbar">
-                <a href="https://terracecaferestaurant.com.au" target="_blank">Home</a>
-                <a href="https://terracecaferestaurant.com.au/function/" target="_blank">Functions</a>
-                <a href="https://terracecaferestaurant.com.au/contact/" target="_blank">Contact Us</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Menu
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="https://terracecaferestaurant.com.au/wp-content/uploads/2015/06/breakfast.pdf" target="_blank">Breakfast Menu</a>
-                        <a href="https://terracecaferestaurant.com.au/wp-content/uploads/2015/06/Lunch.pdf" target="_blank">Lunch Menu</a>
-                        <a href="https://terracecaferestaurant.com.au/wp-content/uploads/2015/06/Dinner.pdf" target="_blank">Dinner Menu</a>
-                        <a href="https://terracecaferestaurant.com.au/wp-content/uploads/2015/07/drinks.pdf" target="_blank">Drinks Menu</a>
-                    </div>
+            <div class="header__blocks">
+                <div class="logo">
+                    <a href="https://terracecaferestaurant.com.au" target="_blank" class="logo__image">
+                        <img src="./images/terrace_logo.jpg" alt="terrace logo icon" class="responsive-image">
+                    </a>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="top-content">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="contact_block">
-                    <div class="social-link">
-                        <a href="https://www.facebook.com/TerraceCafeRestaurant/" class="fb-icon"><i class="fa fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/terrace_persian_grill/" class="insta-icon"><i class="fa fa-instagram"></i></a>
+                <nav class="navbar">
+                    <a href="https://terracecaferestaurant.com.au" target="_blank">Home</a>
+                    <a href="https://terracecaferestaurant.com.au/function/" target="_blank">Functions</a>
+                    <a href="https://terracecaferestaurant.com.au/contact/" target="_blank">Contact Us</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Menu
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="https://terracecaferestaurant.com.au/wp-content/uploads/2015/06/breakfast.pdf" target="_blank">Breakfast Menu</a>
+                            <a href="https://terracecaferestaurant.com.au/wp-content/uploads/2015/06/Lunch.pdf" target="_blank">Lunch Menu</a>
+                            <a href="https://terracecaferestaurant.com.au/wp-content/uploads/2015/06/Dinner.pdf" target="_blank">Dinner Menu</a>
+                            <a href="https://terracecaferestaurant.com.au/wp-content/uploads/2015/07/drinks.pdf" target="_blank">Drinks Menu</a>
+                        </div>
                     </div>
-                    <div class="info-block_name">
-                        <h1 class="green bold">
-                            Modern Australian & Persian Restaurant
-                        </h1>
-                    </div>
-                    <div class="info-block_serving">
-                        <h4>Serving: Breakfast - Lunch - Dinner - Open 7am to 10.30pm</h4>
+                </nav>
+                <div class="header__right-block">
+                    <div class="contact_block">
+                        <div class="social-link">
+                            <a href="https://www.facebook.com/TerraceCafeRestaurant/" class="fb-icon"><i class="fa fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/terrace_persian_grill/" class="insta-icon"><i class="fa fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="i-frame-block">
-                <div class="i-frame-block__info">
-                    <div class="post-content">
-                        <div class="">
-                            <div class="avada-row">
-                                <h2>Order Online – Breakfast – Lunch – Dinner</h2>
-                                <p>
-                                    Take Away Orders available from 7 am to&nbsp;10.30 pm<br>
-                                    Order in Advance and Pickup Breakfast, Coffee, Lunch &amp; Dinner
-                                </p>
-                                <p>Home Delivery Order Online – Delivering to Parramatta &amp; Local Suburbs<br>
-                                    Home Delivery Available from 5 pm to 10.30 pm<br>
-                                    You can Pre-Order Home Delivery in Advance</p>
-                                <p>
-                                    <span>Online Ordering Discount</span>
-                                    <br>
-                                    <span class="bold" style="color: #800080;">10% OFF Takeaway Orders</span>
-                                </p>
-                                <div>
-                                    <a class="button order-btn" target="_self" title="Order Online Takeaway and Home Delivery" href="https://orders.terrace.com.au/order-online/order.html">
-                                        <i class="fa fa-suitcase button-icon-left"></i>
-                                        <span class="fusion-button-text">Order Now</span>
-                                    </a>
+    </header>
+    <main>
+        <div class="discount">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="discount__content">
+                    <div class="discount__left">
+                        <div class="info_block">
+                            <div class="info-block_name">
+                                <h1 class="green bold">
+                                    Modern Australian & Persian Restaurant
+                                </h1>
+                            </div>
+                            <div class="info-block_serving">
+                                <h4>Serving: Breakfast - Lunch - Dinner - Open 7am to 10.30pm</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount__right">
+                        <div class="post-content">
+                            <div class="">
+                                <div class="avada-row">
+                                    <h2>Order Online – Breakfast – Lunch – Dinner</h2>
+                                    <div class="order-button">
+                                        <a class="button" target="_self" title="Order Online Takeaway and Home Delivery" href="https://orders.terrace.com.au/order-online/order.html">
+                                            <i class="fa fa-suitcase button-icon-left"></i>
+                                            <span class="fusion-button-text">Order Now</span>
+                                        </a>
+                                    </div>
+                                    <p>
+                                        Take Away Orders available from 7 am to&nbsp;10.30 pm<br>
+                                        Order in Advance and Pickup Breakfast, Coffee, Lunch &amp; Dinner
+                                    </p>
+                                    <p>Home Delivery Order Online – Delivering to Parramatta &amp; Local Suburbs<br>
+                                        Home Delivery Available from 5 pm to 10.30 pm<br>
+                                        You can Pre-Order Home Delivery in Advance</p>
+                                    <p>
+                                        <span>Online Ordering Discount</span>
+                                        <br>
+                                        <span class="bold" style="color: #800080;">10% OFF Takeaway Orders</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <span class="">
+                                    <img alt="Takeaway Discounts" src="https://terracecaferestaurant.com.au/wp-content/uploads/2016/10/10-off-Takeaway-Orders-300x194.png" class="img-responsive">
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="special-offer">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="discount__content">
+                    <div class="discount__left">
+                        <div class="i-frame-block">
+                            <div class="i-frame-block__info">
+                                <div class="i-frame-block__content">
+                                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTerraceCafeRestaurant%2Fposts%2F2731181376908036&width=500" width="500" height="493" style="border:none;overflow:hidden" scrolling="no"
+                                        frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                                 </div>
                             </div>
                         </div>
-                        <div class="">
-                            <span class="">
-                                <img alt="Takeaway Discounts" src="https://terracecaferestaurant.com.au/wp-content/uploads/2016/10/10-off-Takeaway-Orders-300x194.png" class="img-responsive">
-                            </span>
+                        <div class="order-button">
+                            <a class="button" target="_self" title="Order Online Takeaway and Home Delivery" href="https://orders.terrace.com.au/order-online/order.html">
+                                <i class="fa fa-suitcase button-icon-left"></i>
+                                <span class="fusion-button-text">Order Now</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="i-frame-block__content">
-                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FTerraceCafeRestaurant%2Fposts%2F2731181376908036&width=500" width="500" height="493" style="border:none;overflow:hidden" scrolling="no"
-                        frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <div class="discount__right">
+                        <div class="info_block">
+                            <div class="info-block_name">
+                                <h1 class="green bold">
+                                    Modern Australian & Persian Restaurant
+                                </h1>
+                            </div>
+                            <div class="info-block_serving">
+                                <h4>Serving: Breakfast - Lunch - Dinner - Open 7am to 10.30pm</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        Terrace © 2019
     </footer>
 </body>
 
