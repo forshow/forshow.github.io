@@ -372,7 +372,59 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        position: relative;
+    }
+
     .container {
+        width: 100%;
+    }
+
+    .header__blocks {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .header__right-block {
+        order: 2;
+    }
+
+    .navbar {
+        order: 3;
+    }
+
+    .discount {
+        margin: 0;
+        height: auto;
+    }
+
+    .discount__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discount__left {
+        width: 100%;
+    }
+
+    .info_block {
+        height: 100%;
+    }
+
+    .special-offer {
+        height: auto;
+    }
+
+    .special-offer .discount__left {
+        order: 2;
+    }
+
+    .special-offer .discount__right {
+        order: 1;
         width: 100%;
     }
 }
