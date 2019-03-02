@@ -217,7 +217,7 @@ body {
 }
 
 .content__overlay {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
     position: absolute;
     left: 0;
     top: 0;
