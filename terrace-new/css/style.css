@@ -16,6 +16,32 @@ body {
     line-height: 20px;
     width: 100%;
     height: 100%;
+    position: relative;
+}
+
+.body__background {
+    background: url(../images/body__background.jpg) repeat-y top center fixed;
+    background-size: cover;
+}
+
+.body-overlay {
+    background: rgba(240, 240, 240, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content__overlay {
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .responsive-image {
@@ -152,6 +178,7 @@ body {
 
 .social-link {
     width: 100%;
+    display: flex;
 }
 
 .social-link a {
@@ -162,9 +189,11 @@ body {
 
 .social-link i {
     font-size: 35px;
-    width: 35px;
-    text-align: center;
-    padding: 2px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     background: #383838;
     color: #fff;
@@ -216,28 +245,15 @@ body {
     z-index: 1;
 }
 
-.content__overlay {
-    background: rgba(255, 255, 255, 0.2);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
 .special-section__left {
-    width: 70%;
+    width: calc(100% - 330px);
     height: 100%;
     margin: 0 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.special-section__top-back-image {
-    background: url(../images/special-offer2.jpg) repeat-x top center;
+    background: #fff;
 }
 
 .special-section__second-back-image {
@@ -274,18 +290,15 @@ body {
 }
 
 .content__post h2 {
-    color: #fff;
-    text-shadow: -2px 0 5px green, 0 2px 1px green, 2px 0 5px green, 0 -2px 5px green;
-    font-size: 25px;
+    color: #76b51b;
+    font-size: 35px;
+    line-height: 35px;
     font-weight: bold;
     margin-bottom: 15px;
     letter-spacing: 1px;
-    line-height: 30px;
 }
 
 .content__post p {
-    font-weight: bold;
-    text-shadow: -1px 0 5px #fff, 0 1px 1px #fff, 1px 0 5px #fff, 0 -1px 5px #fff;
 }
 
 /* special__top-block */
@@ -337,8 +350,10 @@ body {
 }
 
 .special-section__right {
-    width: 30%;
+    box-sizing: border-box;
+    width: 330px;
     height: 100%;
+    text-align: center;
     margin: 0 5px;
     overflow: hidden;
 }
@@ -378,7 +393,7 @@ body {
 
 .footer {
     width: 100%;
-    background: rgba(53, 53, 53, 0.85);
+    background: rgba(53, 53, 53, 0.95);
 }
 
 .footer__wrapper {
@@ -392,11 +407,17 @@ body {
 .footer h3 {
     font-weight: bold;
     margin-bottom: 10px;
+    color: #76b51b;
 }
 
 .footer p {
     font-size: 14px;
     font-weight: lighter;
+}
+
+.footer p span {
+    font-weight: bold;
+    line-height: 25px;
 }
 
 /* media */
@@ -501,9 +522,6 @@ body {
         margin-bottom: 10px;
     }
 
-    .fb-feeds {
-        display: none;
-    }
 }
 
 /* media end */
