@@ -408,6 +408,10 @@ body {
     padding: 10px;
 }
 
+.footer__wrapper>div {
+    width: calc(100% / 3);
+}
+
 .footer h3 {
     font-weight: bold;
     margin-bottom: 10px;
@@ -415,6 +419,7 @@ body {
 }
 
 .footer p {
+    width: 90%;
     font-size: 14px;
     font-weight: lighter;
 }
@@ -422,6 +427,10 @@ body {
 .footer p span {
     font-weight: bold;
     line-height: 25px;
+}
+
+.footer .copyright {
+    text-align: right;
 }
 
 /* media */
@@ -536,6 +545,25 @@ body {
 
     .fb-feeds {
         display: none;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+    }
+
+    .footer__wrapper>div {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer p {
+        margin: auto;
+    }
+
+
+    .footer .copyright {
+        text-align: center;
     }
 }
 
