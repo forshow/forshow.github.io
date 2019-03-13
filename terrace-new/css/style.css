@@ -19,6 +19,10 @@ body {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
+
 .body__background {
     background: url(../images/body__background.jpg) repeat-y top center fixed;
     background-size: cover;
@@ -55,7 +59,6 @@ body {
 
 .bold {
     font-weight: bold;
-    font-size: 1.2em;
 }
 
 .container {
@@ -90,7 +93,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px
+}
+
+.header__blocks>div {
+    width: 26%;
+}
+
+
+.contact_block h2 {
+    text-align: right;
+}
+
+.contact_block p {
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
 }
 
 /* logo */
@@ -245,7 +262,7 @@ body {
 }
 
 .first-feed {
-    height: 521px;
+    height: 520px;
 }
 
 .second-feed {
@@ -298,11 +315,16 @@ body {
 
 .content__post h2 {
     color: #76b51b;
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 25px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     letter-spacing: 1px;
+}
+
+.content__post p {
+    margin: 10px auto;
+    font-weight: lighter;
 }
 
 /* special__top-block */
@@ -416,6 +438,12 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     color: #76b51b;
+    transition: 0.3s color ease-out;
+}
+
+.footer h3:hover {
+    color: #ccc;
+    transition: 0.3s color ease-out;
 }
 
 .footer p {
@@ -439,14 +467,14 @@ body {
 }
 
 @media screen and (max-width: 1020px) {
+    .not-mobile {
+        display: none;
+    }
+
     .header {
         height: 110px;
         position: relative;
         background: rgb(53, 53, 53);
-    }
-
-    .header-pusher {
-        display: none;
     }
 
     .container {
@@ -459,8 +487,12 @@ body {
         padding: 0px;
     }
 
+    .header__blocks>div {
+        width: 50%;
+    }
+
     .logo {
-        order: 1;
+        width:
     }
 
     .header__right-block {

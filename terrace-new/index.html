@@ -26,7 +26,19 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+
+    <!-- InstaLink -->
+
+    <link href="./instalink/instalink-2.1.10.min.css" rel="stylesheet">
+    <script src="./instalink/instalink-2.1.10.min.js"></script>
+
+    <!-- END InstaLink -->
+
+
+
     <!--Start of Tawk.to Script-->
+<!--
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
@@ -40,6 +52,7 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
     </script>
+-->
     <!--End of Tawk.to Script-->
 </head>
 
@@ -56,7 +69,7 @@
                     </a>
                 </div>
                 <nav class="navbar">
-                    <a href="https://terracecaferestaurant.com.au" target="_blank">Home</a>
+                    <a href="https://terracecaferestaurant.com.au/home-3/" target="_blank">More Info</a>
                     <a href="https://terracecaferestaurant.com.au/function/" target="_blank">Functions</a>
                     <a href="https://terracecaferestaurant.com.au/contact/" target="_blank">Contact Us</a>
                     <div class="dropdown">
@@ -73,9 +86,14 @@
                 </nav>
                 <div class="header__right-block">
                     <div class="contact_block">
+                        <h2 class="green">Persian - Lebanese – International</h2>
+                        <p><span class="bold">Open 7am to 10.30pm</span> <br><span class="not-mobile">Serving: Breakfast - Lunch – Dinner</span></p>
+
+                        <!--
                         <div class="social-link">
                             <a href="https://www.facebook.com/TerraceCafeRestaurant/" class="fb-icon" target="_blank"><i class="fa fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/terrace_grill_restaurant/" class="insta-icon" target="_blank"><i class="fa fa-instagram"></i></a>
+                        -->
                         </div>
                     </div>
                 </div>
@@ -83,7 +101,7 @@
         </div>
     </header>
     <main>
-        <div class="header-pusher"></div>
+        <div class="header-pusher not-mobile"></div>
         <div class="container light-background">
             <div class="terrace-title">
                 <h1>Welcome to Terrace</h1>
@@ -94,15 +112,14 @@
                 <div class="special-section__left">
                     <div class="special-section__content special-section__top-back-image">
                         <div class="content__post">
-                            <h2>Order Online – Breakfast – Lunch – Dinner</h2>
-
                             <p>
+                                <span class="bold green">Order Online – Breakfast – Lunch – Dinner</span><br>
                                 Take Away Orders available from 7 am to&nbsp;10.30 pm<br>
                                 Order in Advance and Pickup Breakfast, Coffee, Lunch &amp; Dinner
                             </p>
-                            <p>Home Delivery Order Online – Delivering to Parramatta &amp; Local Suburbs<br>
-                                Home Delivery Available from 5 pm to 10.30 pm<br>
-                                You can Pre-Order Home Delivery in Advance</p>
+                            <p><span class="bold">Home Delivery Order Online</span><br>
+                                Delivering to Parramatta &amp; Local Suburbs<br>
+                                Home Delivery Available from 5 pm to 10.30 pm or Pre-Order Home Delivery in Advance</p>
                             <p>
                                 <span>Online Ordering special-section</span>
                                 <br>
@@ -137,13 +154,27 @@
                         <div class="content__overlay"></div>
                         <div class="content__post">
                             <div class="post__top-block">
-                                <div class="top-block__content">
-                                    <h2>Special Offer</h2>
-                                    <h3>Only $29 <span>&rArr;</span>
+                                <div class="top-block__content not-mobile">
+                                    <h2>Check Out Specials</h2>
+                                    <h3>Food Photos <span>&rArr;</span>
                                     </h3>
                                 </div>
                                 <div class="top-block__i-frame">
-                                    <img src="./images/special-offer_image.jpg" alt="special-offer_image" class="responsive-image">
+                                    <div data-il
+                                         data-il-api="/terrace_grill_restaurant/"
+                                         data-il-username="elfsight"
+                                         data-il-hashtag=""
+                                         data-il-lang="en"
+                                         data-il-show-heading="true"
+                                         data-il-scroll="true"
+                                         data-il-width="270px"
+                                         data-il-height="350px"
+                                         data-il-image-size="medium"
+                                         data-il-bg-color="#285989"
+                                         data-il-content-bg-color="#F8F8F8"
+                                         data-il-font-color="#FFFFFF"
+                                         data-il-ban="">
+                                    </div>
                                 </div>
                             </div>
 
@@ -175,7 +206,7 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="contact-info">
-                    <h3>MAKE A RESERVATION</h3>
+                    <a href="https://terracecaferestaurant.com.au/contact/"><h3>MAKE A RESERVATION</h3></a>
                     <div class="address">
                         <p>
                             <span>Pickup Address:</span> 399-401 Church Street, Parramatta NSW 2150
