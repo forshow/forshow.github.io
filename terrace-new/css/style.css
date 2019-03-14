@@ -19,6 +19,10 @@ body {
     position: relative;
 }
 
+.for-mobile-only {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -39,7 +43,7 @@ a {
 }
 
 .content__overlay {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.2);
     position: absolute;
     left: 0;
     top: 0;
@@ -320,6 +324,7 @@ a {
     font-weight: bold;
     margin-bottom: 20px;
     letter-spacing: 1px;
+    text-shadow: -2px 0 5px white, 0 2px 1px white, 2px 0 5px white, 0 -2px 5px white;
 }
 
 .content__post p {
@@ -356,7 +361,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 300px;
     height: 100%;
 }
 
@@ -466,6 +471,10 @@ a {
 }
 
 @media screen and (max-width: 1020px) {
+    .for-mobile-only {
+        display: inherit;
+    }
+
     .not-mobile {
         display: none;
     }
@@ -552,6 +561,10 @@ a {
         justify-content: center;
     }
 
+    .top-block__i-frame {
+        width: 100%;
+    }
+
     .terrace-title h1{
         font-size: 30px;
         line-height: 30px;
@@ -571,7 +584,9 @@ a {
     }
 
     .post__top-block {
+        flex-direction: column;
         margin-bottom: 10px;
+        padding: 15px;
     }
 
     .fb-feeds {
